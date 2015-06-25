@@ -36,5 +36,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "lodash": "^3.9.3"
   }
 }
