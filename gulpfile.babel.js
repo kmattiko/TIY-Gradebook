@@ -101,7 +101,8 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     server: {
       baseDir: [ 'app', '.temp'],
       routes: {
-        '/bower_components': 'bower_components'
+        '/bower_components': 'bower_components',
+        '/api': 'api'
       }
     },
     directory: true
