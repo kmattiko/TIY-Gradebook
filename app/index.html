@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" ng-app="tiy-gradebook">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -23,12 +23,12 @@
     <!-- endbuild -->
   </head>
 
-    <body ng-controller=“MainController as app”>
+    <body ng-controller="MainController as app">
     <nav>
-     <a href=“#” ng-click=“app.page(‘repos’)”>Go To Repositories</a>
-     <a href=“#” ng-click=“app.page(‘repos’)”>Go To Milestones</a>
+     <a href="#" ng-click="app.page('repositories')">Go To Repositories</a><br>
+     <a href="#" ng-click="app.page('milestones')">Go To Milestones</a>
     </nav>
-    <main class=“container” ng-include=“view”></main>
+    <main class="container" ng-include="app.view"></main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -62,7 +62,9 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="/bower_components/angular/angular.js"></script>
     <script src="/scripts/main.js"></script>
+
     <!-- endbuild -->
   </body>
 </html>
