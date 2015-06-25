@@ -1,0 +1,86 @@
+
+
+  <div class="gradebook container">
+    <h1>TIY Orlando Gradebook</h1>
+    <h3>2015--SUMMER--FEE</h3>
+    <ul class="milestones progress" ng-controller="CohortController as cohort">
+      <div class="progres">
+      <li class="class_assignements" ng-repeat="assignment in cohort.assignments">
+        <h4><a href="{{assignment.html_url}}"{{assignment.title}}</h4>
+        <div class="progress-bar progress-bar-good" style="width: 0%">
+          <span>0% Complete (0)</span>
+        </div>
+        <div class="progress-bar progress-bar-keeppracticing" style="width: 60%">
+          <span>60% Complete (6)</span>
+        </div>
+        <div class="progress-bar progress-bar-notyet" style="width: 30%">
+          <span>30% Complete (3)</span>
+        </div>
+        <div class="progress-bar progress-bar-notcompleted" style="width: 10%">
+          <span>10% Incomplete (1)</span>
+        </div>
+      </li>
+
+      <li>
+        <h4>00--Brace Yourself</h4>
+        <div class="progress-bar progress-bar-success" style="width: 0%">
+          <span>0% Complete (0)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 60%">
+          <span>60% Complete (6)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 30%">
+          <span>30% Complete (3)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 10%">
+          <span>10% Incomplete (1)</span>
+        </div>
+      </li>
+      <li>
+        <h4>01--Right Mindset</h4>
+        <div class="progress-bar progress-bar-success" style="width: 36%">
+          <span>36% Complete (4)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 45%">
+          <span>45% Complete (5)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 9%">
+          <span>9% Complete (1)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 9%">
+          <span>9% Incomplete (1)</span>
+        </div>
+      </li>
+      <li>
+        <h4>TodoCLI, Part 1</h4>
+        <div class="progress-bar progress-bar-success" style="width: 20%">
+          <span>20% Complete (2)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 30%">
+          <span>30% Complete (3)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 50%">
+          <span>50% Complete (5)</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: 0%">
+          <span>0% Incomplete (0)</span>
+        </div>
+      </li>
+      <li>
+        <h4>{{Milestone Name}}</h4>
+        <div class="progress-bar progress-bar-success" style="width: {{percent.review}}%">
+          <span>{{percent.review}}% Complete ({{num.complete}})</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: {{percent.review}}%">
+          <span>{{percent.review}}% Complete ({{num.complete}})</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: {{percent.review}}%">
+          <span>{{percent.review}}% Complete ({{num.complete}})</span>
+        </div>
+        <div class="progress-bar progress-bar-success" style="width: {{percent.review}}%">
+          <span>{{precent.review}}% Complete ({{num.complete}})</span>
+        </div>
+      </div>
+      </li>
+    </ul>
+  </div>
