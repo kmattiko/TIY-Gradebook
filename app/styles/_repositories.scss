@@ -1,5 +1,27 @@
+
+h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+h3 {
+  color: black;
+}
+
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Helvetica Neue' sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+}
+
+li {
+
 }

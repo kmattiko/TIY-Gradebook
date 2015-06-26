@@ -14,8 +14,15 @@ app.controller('MainController', function($http){
         }
      }
      this.page('repositories');
+    //  this.repos = [ ];
+     //
+    //  $http.get('/api/github/orgs/TheIronYard--Orlando/repos.json')
+    //  then(function(response){
+    //    self.repos = response.data;
+     //
+    //  }, function(){
+    //    console.log(whohoo!);
+    //  })
 });
-
-
 
 })(window);

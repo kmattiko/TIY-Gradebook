@@ -21,14 +21,38 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <style>
+    body{
+      background-color: #fff;
+    }
+
+    nav.btn-group {
+      float:left;
+      border-radius: 10px;
+      margin-left: 20px;
+
+    }
+    .btn {
+      background: #6fbbb7;
+      border-color: #6fbbb7;
+    }
+    img {
+      float:right;
+      display: inline-block;
+      margin-right: 50px;
+    }
+
+    </style>
+
   </head>
 
     <body ng-controller="MainController as app">
-    <nav>
-     <a href="#" ng-click="app.page('repositories')">Go To Repositories</a><br>
-     <a href="#" ng-click="app.page('milestones')">Go To Milestones</a>
+      <img src="http://theironyard.com/images/iron-yard-logo.svg" alt="TIY-logo">
+    <nav class="btn-group">
+      <button type="button" class="btn btn-default" ng-click="app.page('repositories')">Repositories</button>
+      <button type="button" class="btn btn-default" ng-click="app.page('milestones')">Milestones</button>
     </nav>
-    <main class="container" ng-include="app.view"></main>
+    <main class="container-fluid" ng-include="app.view"></main>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
