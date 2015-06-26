@@ -99,7 +99,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     notify: false,
     port: 9000,
     server: {
-      baseDir: [ 'app', '.tmp'],
+      baseDir: ['app', '.tmp'],
       routes: {
         '/bower_components': 'bower_components',
         '/api': 'api'
@@ -109,7 +109,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
   });
 
   gulp.watch([
-    'app/views/*.html',
+    'app/**/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
