@@ -1,11 +1,10 @@
-
 h1 {
-  text-align: center;
-  padding-top: 40px;
+  text-align: left;
+  color: #202F37;
 }
 
 h3 {
-  color: black;
+  color: #202F37;
 }
 
 .page-header {
@@ -14,14 +13,22 @@ h3 {
   border-bottom: none;
 }
 
+/* .container-fluid {
+  background-color: #E3E7E9;
+} */
+
 a {
   text-decoration: none;
-  color: #000;
+  color: #202F37;
   font-family: 'Helvetica Neue' sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1.3em;
+  font-weight:500;
 }
 
-li {
+p {
+  font-family: 'Helvetica Neue' sans-serif;
+  color: #727D84;
+  margin: 0px;
 
 }
