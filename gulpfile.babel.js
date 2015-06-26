@@ -109,7 +109,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
   });
 
   gulp.watch([
-    'app/*.html',
+    'app/views/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
@@ -155,7 +155,7 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/views/*.html')
+  gulp.src('app/**/*.html')
     .pipe(wiredep({
       exclude: ['bootstrap-sass'],
       ignorePath: /^(\.\.\/)*\.\./
