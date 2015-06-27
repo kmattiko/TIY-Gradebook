@@ -1,17 +1,20 @@
 
 
 .progress {
-  padding: 1em 1em 20em 1em;
+  padding: 1em 1em 40em 1em;
 }
+
+.progress .title {
+  color: darkgrey;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+}
+
 
 .progress li {
   list-style: none;
-  padding-bottom: 1em;
-}
-
-.progress a {
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: 4em;
 }
 
 .progress .progress-bar {
