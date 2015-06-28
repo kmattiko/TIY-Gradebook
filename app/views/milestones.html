@@ -1,6 +1,10 @@
 
 <main class="container-fluid">
-  <h1>TIY Orlando Gradebook</h1>
+  <div class="gradebook col-lg-12">
+  <h1 class="page-header">TIY Orlando Gradebook</h1>
+
+  <!-- Start of chart (Reference implementation (bootstrap)-->
+    <section class="classes">
     <h3>2015--SUMMER--FEE</h3>
     <ul class="progress" ng-controller="CohortController as cohort">
       <li>
@@ -46,4 +50,21 @@
         </div>
       </li>
     </ul>
+    </section>
+
+    <section class="classes list-group">
+      <nav class="list-group-item">
+      <section class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% Complete (danger)</span>
+  </div>
+</section>
+</nav>
+    </section>
   </main>

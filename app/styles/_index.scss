@@ -32,6 +32,12 @@ nav.btn-group {
   border-color: #5B9D99;
 }
 
+.btn-default:focus {
+  outline: none;
+  border-color: #39474E;
+
+}
+
 .btn {
   background: #6fbbb7;
   border-color: #39474E;

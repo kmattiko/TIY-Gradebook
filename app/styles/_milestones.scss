@@ -1,6 +1,5 @@
 
-
-.progress {
+/* .progress {
   padding: 1em 1em 40em 1em;
 }
 
@@ -10,7 +9,6 @@
   font-size: 1.2em;
   display: block;
 }
-
 
 .progress li {
   list-style: none;
@@ -23,3 +21,18 @@
   font: 7px;
   vertical-align: top;
 }
+ */
+ h1 {
+   text-align: left;
+   color: #202F37;
+ }
+
+ h3 {
+   color: #202F37;
+ }
+
+ .page-header {
+   padding-bottom: 9px;
+   margin: 40px 0 20px;
+   border-bottom: none;
+ }
