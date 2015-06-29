@@ -14,15 +14,35 @@ app.controller('MainController', function($http){
         }
      }
      this.page('repositories');
-    //  this.repos = [ ];
-     //
-    //  $http.get('/api/github/orgs/TheIronYard--Orlando/repos.json')
-    //  then(function(response){
-    //    self.repos = response.data;
-     //
-    //  }, function(){
-    //    console.log(whohoo!);
-    //  })
+}); //END OF PAGE CLICK buttons
+
+app.controller('ClassController', function($https){
+  var self = this;
+  self.repos = [ ];
+
+  $http.get('/api/github/repos/repos.json')
+  .then(function(response){
+
+  self.repos = _.filter(response.data, function(repo){
+    if ((repo.name.indexOf( 'FEE' ) !== -1) ||
+    (repo.name.indexOf('ROR') ! == -1) ||
+    (repo.name.indexOf('iOS') ! == -1)) {
+      return true;
+    };
+  });
 });
+});
+
+/*app.controller('CohortController', function($http){
+  var self = this;
+  self.milestones = [];
+
+  $http.get('/api/github/repos/milestones.json')
+  .this(function(response){
+    self.milestones = response.data;
+
+
+  })*/
+})
 
 })(window);
