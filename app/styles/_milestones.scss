@@ -5,12 +5,15 @@
   font-family: 'Helvetica Neue' sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-/* .progress .title {
+.progress .title {
   color: darkgrey;
   font-weight: bold;
   font-size: 1.2em;
   display: block;
+}
+
+.progress {
+  padding: 1em 1em 60em 1em;
 }
 
 .progress li {
@@ -23,7 +26,7 @@
   padding-bottom: .6em;
   font: 7px;
   vertical-align: top;
-} */
+}
  h1 {
    text-align: left;
    color: #202F37;

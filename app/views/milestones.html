@@ -3,9 +3,63 @@
     <h1 class="page-header">TIY Orlando Gradebook</h1>
 
     <!-- Start of chart (Reference implementation (bootstrap)-->
+
     <section class="classes">
       <h3>2015--SUMMER--FEE</h3>
       <ul class="progress" ng-controller="CohortController as cohort">
+
+        <li>
+        <a href="#" class="title">Your Title</a><br>    <!-- ng-repeat="assignment in cohort.assignments"-->
+        <div class="progress-bar progress-bar-success" style="width: 20%">
+          <span>Job (2)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning" style="width: 50%">
+          <span>Keep Practicing (5)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 30%">
+          <span>Not Yet (3)</span>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="title">00--Brace Yourselves</a><br>    <!-- ng-repeat="assignment in cohort.assignments"-->
+        <div class="progress-bar progress-bar-success" style="width: 10%">
+          <span>Good (1)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning" style="width: 30%">
+          <span>Keep Practicing (3)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 40%">
+          <span>Not Yet (4)</span>
+        </div>
+        <div class="progress-bar default" style="width: 20%">
+          <span>Not Completed (2)</span>
+        </div>
+      </li>
+      <li>
+        <a href="#" class="title">01--Right Mindset</a><br>    <!-- ng-repeat="assignment in cohort.assignments"-->
+        <div class="progress-bar progress-bar-success" style="width: 40%">
+          <span>Good (4)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%">
+          <span>Keep Practicing (2)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span>Not Yet (1)</span>
+        </div>
+        <div class="progress-bar progress-bar-default" style="width: 30%">
+          <span>Not Completed (3)</span>
+        </div>
+      </li>
+
+
+
+
+
+
+
+
+
+
         <li>
           <a href="#" class="title">Milestones</a>
           <br>
@@ -56,62 +110,63 @@
         </li>
       </ul>
     </section>
-    <section class="classes list-group">
-      <nav class="list-group-item">
-        <section class="progress">
-          <div class="progress-bar progress-bar-success" style="width: 35%">
-            <span class="sr-only">35% Complete (success)</span>
-          </div>
-          <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
-            <span class="sr-only">20% Complete (warning)</span>
-          </div>
-          <div class="progress-bar progress-bar-danger" style="width: 10%">
-            <span class="sr-only">10% Complete (danger)</span>
-          </div>
-        </section>
-      </nav>
-        <!-- start of milestone-2 -->
-          <nav class="list-group-item">
-            <section class="progress">
-              <div class="progress-bar progress-bar-success" style="width: 35%">
-                <span class="sr-only">35% Complete (success)</span>
-              </div>
-              <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
-                <span class="sr-only">20% Complete (warning)</span>
-              </div>
-              <div class="progress-bar progress-bar-danger" style="width: 10%">
-                <span class="sr-only">10% Complete (danger)</span>
-              </div>
-            </section>
-      </nav>
-      <!-- start of milestone-3 -->
-      <nav class="list-group-item">
-        <section class="progress">
-          <div class="progress-bar progress-bar-success" style="width: 35%">
-            <span class="sr-only">35% Complete (success)</span>
-          </div>
-          <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
-            <span class="sr-only">20% Complete (warning)</span>
-          </div>
-          <div class="progress-bar progress-bar-danger" style="width: 10%">
-            <span class="sr-only">10% Complete (danger)</span>
-          </div>
-        </section>
+  <!--   <section class="classes list-group">
+        start of milestone-1
+    <nav class="list-group-item">
+      <section class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">
+          <span class="sr-only">35% Complete (success)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+          <span class="sr-only">20% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span class="sr-only">10% Complete (danger)</span>
+        </div>
+      </section>
+    </nav>
+      start of milestone-2
+        <nav class="list-group-item">
+          <section class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 35%">
+              <span class="sr-only">35% Complete (success)</span>
+            </div>
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+              <span class="sr-only">20% Complete (warning)</span>
+            </div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%">
+              <span class="sr-only">10% Complete (danger)</span>
+            </div>
+          </section>
+    </nav>
+    start of milestone-3
+    <nav class="list-group-item">
+      <section class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%">
+          <span class="sr-only">35% Complete (success)</span>
+        </div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+          <span class="sr-only">20% Complete (warning)</span>
+        </div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%">
+          <span class="sr-only">10% Complete (danger)</span>
+        </div>
+      </section>
+    </nav>
+    start of milestone-4
+    <nav class="list-group-item">
+  <section class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 35%">
+      <span class="sr-only">35% Complete (success)</span>
+    </div>
+    <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+      <span class="sr-only">20% Complete (warning)</span>
+    </div>
+    <div class="progress-bar progress-bar-danger" style="width: 10%">
+      <span class="sr-only">10% Complete (danger)</span>
+    </div>
+  </section>
   </nav>
-  <!-- start of milestone-4 -->
-  <nav class="list-group-item">
-    <section class="progress">
-      <div class="progress-bar progress-bar-success" style="width: 35%">
-        <span class="sr-only">35% Complete (success)</span>
-      </div>
-      <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
-        <span class="sr-only">20% Complete (warning)</span>
-      </div>
-      <div class="progress-bar progress-bar-danger" style="width: 10%">
-        <span class="sr-only">10% Complete (danger)</span>
-      </div>
-    </section>
-</nav>
-</section>
+  </section> -->
 
 </main>
