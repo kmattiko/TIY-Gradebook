@@ -1,16 +1,17 @@
 
-
-.progress {
-  padding: 1em 1em 40em 1em;
+.title {
+  text-decoration: none;
+  color: #202F37;
+  font-family: 'Helvetica Neue' sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.progress .title {
+/* .progress .title {
   color: darkgrey;
   font-weight: bold;
   font-size: 1.2em;
   display: block;
 }
-
 
 .progress li {
   list-style: none;
@@ -22,4 +23,18 @@
   padding-bottom: .6em;
   font: 7px;
   vertical-align: top;
-}
+} */
+ h1 {
+   text-align: left;
+   color: #202F37;
+ }
+
+ h3 {
+   color: #202F37;
+ }
+
+ .page-header {
+   padding-bottom: 9px;
+   margin: 40px 0 20px;
+   border-bottom: none;
+ }

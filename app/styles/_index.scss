@@ -26,6 +26,18 @@ nav.btn-group {
   border-radius: 10px;
 }
 
+.btn-default:hover {
+  color: #39474E;
+  background-color: #5B9D99;
+  border-color: #5B9D99;
+}
+
+.btn-default:focus {
+  outline: none;
+  border-color: #39474E;
+
+}
+
 .btn {
   background: #6fbbb7;
   border-color: #39474E;
