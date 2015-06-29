@@ -1,8 +1,9 @@
-(function(window){
+(function(window) {
 
 var app = angular.module('tiy-gradebook', [ ]);
 
 app.controller('MainController', function($http){
+  this.view = 'views/repositories.html';
      this.page = function(name){
        this.view = 'views/404.html';
 
@@ -25,12 +26,16 @@ app.controller('ClassController', function($https){
 
   self.repos = _.filter(response.data, function(repo){
     if ((repo.name.indexOf( 'FEE' ) !== -1) ||
-    (repo.name.indexOf('ROR') ! == -1) ||
-    (repo.name.indexOf('iOS') ! == -1)) {
+    (repo.name.indexOf('ROR') !== -1) ||
+    (repo.name.indexOf('iOS') !== -1)) {
       return true;
     };
   });
 });
+
+
+
+
 });
 
 /*app.controller('CohortController', function($http){
@@ -43,6 +48,6 @@ app.controller('ClassController', function($https){
 
 
   })*/
-})
+});
 
 })(window);
